@@ -2,18 +2,19 @@
 <html>
 <head>
 	<title>Mr.Plague Home</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="styles/style.css"/>
 	<link href='https://fonts.googleapis.com/css?family=MedievalSharp' rel='stylesheet'>
  	<link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet"> 
- 	<link href="https://fonts.googleapis.com/css?family=Megrim|Rajdhani:300&display=swap" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css?family=Megrim|Rajdhani:300&display=swap" rel="stylesheet"> 
+	 <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
 		<div class="header">
 			<div class="navbar">
-				<a class="active" href="#">Home</a> 
-				<a href="#">Bots</a>
 				<a href="#">Projects</a>
+				<a href="#">Bots</a>
+				<a class="active" href="#">Home</a>
 			</div>
 			<div class="title">
 				<div class="titleText">
@@ -21,9 +22,28 @@
 					<p>Bloodletting has never been cooler</p>
 				</div>
 			</div>
+			<div class="pres">
+				
+				<div class="presText">
+					<h1>Permanently Growing Library</h1>
+					<p>Our project library is full of interesting programs, from a subnetting calculator to <br>a silly extension for chrome. And better yet, thay are all open source!</p>
+					<a href="#" class="presButton">Have a look!</a>
+				</div>
+				<div class="presImg">
+					<img class="codeImg" src="images/code.png" alt="archive gif" style="height:540px;">
+					<img class="codeImg1" src="images/code.gif" alt="archive gif" style="height:540px;display:None;">
+					<img class="codeImg2" src="images/code1.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg3" src="images/code2.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg4" src="images/code3.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg5" src="images/code4.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg6" src="images/code5.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg7" src="images/code6.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg8" src="images/code7.gif" alt="archive gif" style="height:540px;display:None">
+					<img class="codeImg9" src="images/code8.gif" alt="archive gif" style="height:540px;display:None">
+					<img src="images/presBar.png" alt="archive gif" style="height:540px;">
+				</div>
+			</div>
 		</div>
-		<br />
-		<br />
 		<div class="content">
 			<div class="main">
 				<div class="imgRight">
@@ -75,6 +95,7 @@
 					<a class="buttonRight" href="#">Check it out</a>
 				</div>
 			</div>
+			<div class="space"></div>
 		</div>
 		<div class="footer">
 			<div class="footerText">
@@ -83,6 +104,15 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	   let num = Math.floor((Math.random() * 8) + 1);
+	   $(".codeImg").mouseover(function(){$(".codeImg" + num).show()});
+	   $(".codeImg").mouseover(function(){$(".codeImg").hide()});
+	   $(".codeImg" + num).mouseover(function(){$(".codeImg" + num).show()});
+	   $(".codeImg" + num).mouseout(function(){$(".codeImg" + num).hide()});
+	   $(".codeImg" + num).mouseout(function(){$(".codeImg").show()});
+		console.log(num);
+	</script>
 </body>
 </html>

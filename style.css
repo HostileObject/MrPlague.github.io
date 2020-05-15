@@ -48,7 +48,7 @@ body {
 .header .title {
   background-image: url("../images/MrPlagueX4Blur.jpg");
   background-color: #cccccc;
-  height: 800px;
+  height: 1000px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,20 +82,95 @@ body {
   font-size: 80px;
 }
 
-.content {
+.header .pres {
+  min-width: 1770px;
+  min-height: 540px;
+  margin-top: 140px;
+  position: relative;
+  background-color: #2d3037;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .pres .presText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  background-color: #2d3037;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 22px;
+  color: white;
   min-width: 1000px;
 }
 
+.header .pres .presImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  height: 540px;
+  width: 100%;
+}
+
+@media (max-width: 1770px) {
+  .header .pres .presImg {
+    display: none;
+  }
+}
+
+.header .pres .presButton {
+  font-family: 'Tangerine', cursive;
+  display: block;
+  border: 2px solid #fe5fc8;
+  background-color: #191b20;
+  margin-top: 10px;
+  width: 25%;
+  border-radius: 10px;
+  padding: 20px;
+  color: #cccccc;
+  text-decoration: none;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 40px;
+}
+
+.content {
+  min-width: 1000px;
+  background-image: url("../images/Back.jpg");
+  background-color: #cccccc;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  border-radius: 60.5px;
+}
+
 .content .main {
-  min-width: 980px;
+  position: relative;
+  min-width: 960px;
   min-height: 340px;
   background-color: #2d3037;
   border-radius: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px;
-  margin-top: 110px;
+  margin-top: 140px;
 }
 
 .content .main .textRight {
